@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Digital Measurement </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Digital Measurement ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="digital-measurement">Digital Measurement</h1>
+
+<h2 id="11-drawings">1.1 Drawings</h2>
+<p>The Drawings information can be found in the table below:</p>
+<table>
+<thead>
+<tr>
+<th>Properties</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Display Name</td>
+<td>This is the name that will be displayed in the drawing selection dropdown. By default, it is filled in with the drawing’s filename however this can be overwritten.</td>
+</tr>
+<tr>
+<td>Allocate Folder</td>
+<td>This allows the drawings to be allocated under folders for easy sorting/display. Any previously created folder name will be stored and available off the dropdown for future use.</td>
+</tr>
+<tr>
+<td>File Path</td>
+<td>Automatically filled in based on the drawing's file location. Press the button to re-select/change the drawing before finalizing the properties.</td>
+</tr>
+<tr>
+<td>Load Visuals</td>
+<td>Deselecting the Load Visuals check-box when uploading a drawing or within its properties means the drawing will be shown without any drawing visuals on the presented drawing.</td>
+</tr>
+<tr>
+<td>Load Text</td>
+<td>Deselecting the Load Visuals check-box when uploading a drawing or within its properties means the drawing will be shown without any text on the presented drawing.</td>
+</tr>
+<tr>
+<td>Drawing Title</td>
+<td>Allows the drawing title as shown on the drawing to be entered.</td>
+</tr>
+<tr>
+<td>Number</td>
+<td>Allows the drawing number as shown on the drawing to be entered.</td>
+</tr>
+<tr>
+<td>Revision</td>
+<td>Allows the revision name/number as shown on the drawing to be entered.</td>
+</tr>
+<tr>
+<td>Received Date</td>
+<td>Allows the date that the drawing was received to be entered. Press the icon to get access to the full calendar or manually type in the date.</td>
+</tr>
+<tr>
+<td>Unit</td>
+<td>This reflects the unit that the dimensions are drawn/shown as on the drawing.</td>
+</tr>
+<tr>
+<td>Drawing Multiplier</td>
+<td>This allows all measured quantities on the drawing to be multiplied by whichever number is entered here. For example, an apartment building may have 5 typical levels all the same so measurement could be done on one with 5 entered here and all quantities will be multiplied by 5 when measured on this drawing.</td>
+</tr>
+<tr>
+<td>Horizontal Axis (X)</td>
+<td>Reflects the scale of the drawing and can be manually entered based on the scale specified on the drawing or if the calibration feature is used this will be filled in automatically.</td>
+</tr>
+<tr>
+<td>Vertical Axis (Y)</td>
+<td>Reflects the scale of the drawing and can be manually entered based on the scale specified on the drawing or if the calibration feature is used this will be filled in automatically.</td>
+</tr>
+<tr>
+<td>Apply to Both</td>
+<td>When ticked anything entered in the X Axis will automatically fill in with the same value in the Y Axis. By default, it is ticked.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="12-dm-objects">1.2 DM Objects</h2>
+<table>
+<thead>
+<tr>
+<th>Properties</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>This is the name of the object that will be displayed in the object measurement tree e.g., “100mm slab”.</td>
+</tr>
+<tr>
+<td>Group</td>
+<td>This is the folder that the object will appear under in the object measurement tree. Use forward slash (/) to add subfolders e.g. Concrete/32MPa etc.</td>
+</tr>
+<tr>
+<td>Default Measure</td>
+<td>This is the mode of measure that will be done for the object e.g. a slab could be measured using “Area” whereas a door may be measured as a “Count”</td>
+</tr>
+<tr>
+<td>Default Width, Height,</td>
+<td>This feature allows further Unit of Measure (UOM) values to be calculated based on the values entered here in conjunction with the mode of measure chosen. E.g., if “Area” is selected and a “Height” is entered as 0.10m then based on the area measured on the drawing the Volume (m3), Vertical Area (m2) etc. will also be calculated. These values can be updated later as required.</td>
+</tr>
+<tr>
+<td>Depth</td>
+<td></td>
+</tr>
+<tr>
+<td>Default Sill Height</td>
+<td>This feature allows you to specify the distance to which the selected object would sit off the drawing. E.g. If a window sill is being measured, by inputting 1.5 into the required cell would mean the window sill sits 1500mm above floor level.</td>
+</tr>
+<tr>
+<td>Positive Colour</td>
+<td>Select the colour that you wish for the positive measurements for the object to be displayed as. This can easily be updated in the main ribbon bar as required.</td>
+</tr>
+<tr>
+<td>Negative Colour</td>
+<td>Select the colour that you wish for the negative measurements for the object to be displayed as. This can easily be updated in the main ribbon bar as required.</td>
+</tr>
+<tr>
+<td>Hatch Style</td>
+<td>Select the type of hatching style that you would like the colour for the selected object to have.</td>
+</tr>
+<tr>
+<td>Methods</td>
+<td></td>
+</tr>
+<tr>
+<td>Creating a New Object</td>
+<td>A new object can be added from the toolbar within the Measurement tab, or within the Objects tab in the left-hand side workspace.</td>
+</tr>
+<tr>
+<td>Viewing an Objects</td>
+<td>Properties You can view an object’s properties by selecting the Properties icon within the Objects tab in the left-hand side workspace. The Properties window will also appear when a new Object is being created.</td>
+</tr>
+<tr>
+<td>Properties</td>
+<td></td>
+</tr>
+<tr>
+<td>Assigning Measurement</td>
+<td>Properties to an Object You can assign an object an additional measurement property, such as width, height, and depth, within the object’s Properties window. This can also be done from the far right-hand side measurement tab within the toolbar.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="how-to-videos">How to Videos</h2>
+<p>[Uploading a drawing](C:\Alex Project\ecshelp\videos\UploadingADrawing.mp4)</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
